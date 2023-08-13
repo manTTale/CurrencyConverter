@@ -37,19 +37,7 @@ public class Main {
         + newCurrency );
 
         //print the result
-        calculate(currencyToBeConverted, ammountOfInitialCurrency, newCurrency);
-    }
-
-    public static int calculate(String currencyFrom, String initialAmount, String currencyInto){
-        int calculatedSum;
-        if(currencyFrom.contains("RON") && currencyInto.contains("EUR")){
-            calculatedSum=Integer.parseInt(initialAmount)/5;
-        }
-        else{
-            calculatedSum=0;
-        }
-        System.out.println("You converted " + initialAmount + " " + currencyFrom +" into " + currencyInto +
-        " and you got back "+ calculatedSum + " " + currencyInto);
-        return calculatedSum;
+        Calculator calculator = new Calculator(currencyToBeConverted, ammountOfInitialCurrency, newCurrency);
+        calculator.calculate();
     }
 }
