@@ -1,6 +1,6 @@
 public class Calculator {
 
-    private final String currencyFrom;
+    private String currencyFrom;
     private String initialAmount;
     private String currencyInto;
 

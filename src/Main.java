@@ -11,7 +11,6 @@ public class Main {
 
         String currencyToBeConverted, ammountOfInitialCurrency, newCurrency;
 
-
         //select the currency you have
         System.out.println("What currency do you have?");
         currencyToBeConverted = reader.read();
